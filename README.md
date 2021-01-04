@@ -8,4 +8,4 @@ Repositorio con códigos de ejemplo para pruebas automatizadas utilizando [Selen
 1. Haz un Fork al repositorio ![GitHub forks](https://img.shields.io/github/forks/framorac/selenium-testng?style=social)
 2. Importar como proyecto [Maven](https://maven.apache.org/) en tu IDE favorito.
 3. Crea una nueva rama para tu código.
-4. haz un PR para compartir tu colaboración.
+4. Haz un PR para compartir tu colaboración.
