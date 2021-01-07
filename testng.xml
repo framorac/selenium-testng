@@ -4,21 +4,21 @@
 	<parameter name="url" value="https://www.google.com" />
 	
 	<test name="Test en Chrome">
-		<parameter name="Browser" value="Chrome" />
+		<parameter name="navegador" value="Chrome" />
 		<classes>
 			<class name="com.testng.selenium.CrossBrowserTesting" />
 		</classes>
 	</test> <!-- Test -->
 	
 	<test name="Test en Firefox">
-		<parameter name="Browser" value="Firefox" />
+		<parameter name="navegador" value="Firefox" />
 		<classes>
 			<class name="com.testng.selenium.CrossBrowserTesting" />
 		</classes>
 	</test> <!-- Test -->
 	
 	<test name="Test en Edge">
-		<parameter name="Browser" value="Edge" />
+		<parameter name="navegador" value="Edge" />
 		<classes>
 			<class name="com.testng.selenium.CrossBrowserTesting" />
 		</classes>
