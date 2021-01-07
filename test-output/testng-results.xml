@@ -1,36 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
+<testng-results total="3" passed="1" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-04T19:19:09Z" name="Default suite" finished-at="2021-01-04T19:19:13Z" duration-ms="4062">
+  <suite started-at="2021-01-07T18:07:20Z" name="Suite" finished-at="2021-01-07T18:07:28Z" duration-ms="8108">
     <groups>
     </groups>
-    <test started-at="2021-01-04T19:19:09Z" name="Default test" finished-at="2021-01-04T19:19:13Z" duration-ms="4062">
-      <class name="com.testng.selenium.BusquedaGoogle">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testng.selenium.BusquedaGoogle@59505b48]" started-at="2021-01-04T16:19:09Z" name="setup" finished-at="2021-01-04T16:19:13Z" duration-ms="3533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="buscarEnGoogle()[pri:0, instance:com.testng.selenium.BusquedaGoogle@59505b48]" started-at="2021-01-04T16:19:13Z" name="buscarEnGoogle" finished-at="2021-01-04T16:19:13Z" duration-ms="55" status="FAIL">
-          <exception class="org.junit.ComparisonFailure">
+    <test started-at="2021-01-07T18:07:20Z" name="Test en Chrome" finished-at="2021-01-07T18:07:21Z" duration-ms="736">
+      <class name="com.testng.selenium.CrossBrowserTesting">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.testng.selenium.CrossBrowserTesting@5d534f5d]" started-at="2021-01-07T15:07:20Z" name="setup" finished-at="2021-01-07T15:07:20Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected:<[selenium - Buscar con ]Google> but was:<[]Google>]]>
+              <![CDATA[unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S8KR3J5', ip: '192.168.1.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0158C0C3+3326147]
+	Ordinal0 [0x01470851+2164817]
+	Ordinal0 [0x012F7298+619160]
+	Ordinal0 [0x0126D6B2+54962]
+	Ordinal0 [0x0126C38A+50058]
+	Ordinal0 [0x01295F3E+220990]
+	Ordinal0 [0x01295CAC+220332]
+	Ordinal0 [0x0129189B+202907]
+	Ordinal0 [0x01273DF4+81396]
+	Ordinal0 [0x01274DEE+85486]
+	Ordinal0 [0x01274D79+85369]
+	Ordinal0 [0x014885DC+2262492]
+	GetHandleVerifier [0x01712874+1487204]
+	GetHandleVerifier [0x017123CD+1486013]
+	GetHandleVerifier [0x0171A368+1518680]
+	GetHandleVerifier [0x01712F4E+1488958]
+	Ordinal0 [0x0147ED0D+2223373]
+	Ordinal0 [0x0148A12B+2269483]
+	Ordinal0 [0x0148A26F+2269807]
+	Ordinal0 [0x0149ECB8+2354360]
+	BaseThreadInitThunk [0x753B0419+25]
+	RtlGetAppContainerNamedObjectPath [0x76F074ED+237]
+	RtlGetAppContainerNamedObjectPath [0x76F074BD+189]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<[selenium - Buscar con ]Google> but was:<[]Google>
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at com.testng.selenium.BusquedaGoogle.buscarEnGoogle(BusquedaGoogle.java:34)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S8KR3J5', ip: '192.168.1.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0158C0C3+3326147]
+	Ordinal0 [0x01470851+2164817]
+	Ordinal0 [0x012F7298+619160]
+	Ordinal0 [0x0126D6B2+54962]
+	Ordinal0 [0x0126C38A+50058]
+	Ordinal0 [0x01295F3E+220990]
+	Ordinal0 [0x01295CAC+220332]
+	Ordinal0 [0x0129189B+202907]
+	Ordinal0 [0x01273DF4+81396]
+	Ordinal0 [0x01274DEE+85486]
+	Ordinal0 [0x01274D79+85369]
+	Ordinal0 [0x014885DC+2262492]
+	GetHandleVerifier [0x01712874+1487204]
+	GetHandleVerifier [0x017123CD+1486013]
+	GetHandleVerifier [0x0171A368+1518680]
+	GetHandleVerifier [0x01712F4E+1488958]
+	Ordinal0 [0x0147ED0D+2223373]
+	Ordinal0 [0x0148A12B+2269483]
+	Ordinal0 [0x0148A26F+2269807]
+	Ordinal0 [0x0149ECB8+2354360]
+	BaseThreadInitThunk [0x753B0419+25]
+	RtlGetAppContainerNamedObjectPath [0x76F074ED+237]
+	RtlGetAppContainerNamedObjectPath [0x76F074BD+189]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.testng.selenium.CrossBrowserTesting.setup(CrossBrowserTesting.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -47,15 +136,130 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buscarEnGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.selenium.BusquedaGoogle@59505b48]" started-at="2021-01-04T16:19:13Z" name="tearDown" finished-at="2021-01-04T16:19:13Z" duration-ms="468" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="busquedaMultiNavegador()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@5d534f5d]" started-at="2021-01-07T15:07:21Z" name="busquedaMultiNavegador" finished-at="2021-01-07T15:07:21Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busquedaMultiNavegador -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@5d534f5d]" started-at="2021-01-07T15:07:21Z" name="tearDown" finished-at="2021-01-07T15:07:21Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testng.selenium.BusquedaGoogle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.testng.selenium.CrossBrowserTesting -->
+    </test> <!-- Test en Chrome -->
+    <test started-at="2021-01-07T18:07:21Z" name="Test en Firefox" finished-at="2021-01-07T18:07:28Z" duration-ms="6812">
+      <class name="com.testng.selenium.CrossBrowserTesting">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.testng.selenium.CrossBrowserTesting@26d9b808]" started-at="2021-01-07T15:07:21Z" name="setup" finished-at="2021-01-07T15:07:27Z" duration-ms="5744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="busquedaMultiNavegador()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@26d9b808]" started-at="2021-01-07T15:07:27Z" name="busquedaMultiNavegador" finished-at="2021-01-07T15:07:27Z" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busquedaMultiNavegador -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@26d9b808]" started-at="2021-01-07T15:07:27Z" name="tearDown" finished-at="2021-01-07T15:07:28Z" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.selenium.CrossBrowserTesting -->
+    </test> <!-- Test en Firefox -->
+    <test started-at="2021-01-07T18:07:28Z" name="Test en Edge" finished-at="2021-01-07T18:07:28Z" duration-ms="534">
+      <class name="com.testng.selenium.CrossBrowserTesting">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.testng.selenium.CrossBrowserTesting@2a265ea9]" started-at="2021-01-07T15:07:28Z" name="setup" finished-at="2021-01-07T15:07:28Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: Unknown error]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+	at com.testng.selenium.CrossBrowserTesting.setup(CrossBrowserTesting.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: U. Last 1 characters read: U
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S8KR3J5', ip: '192.168.1.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="busquedaMultiNavegador()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@2a265ea9]" started-at="2021-01-07T15:07:28Z" name="busquedaMultiNavegador" finished-at="2021-01-07T15:07:28Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busquedaMultiNavegador -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.selenium.CrossBrowserTesting@2a265ea9]" started-at="2021-01-07T15:07:28Z" name="tearDown" finished-at="2021-01-07T15:07:28Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.selenium.CrossBrowserTesting -->
+    </test> <!-- Test en Edge -->
+  </suite> <!-- Suite -->
 </testng-results>
