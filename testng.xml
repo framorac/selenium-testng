@@ -16,11 +16,4 @@
 			<class name="com.testng.selenium.CrossBrowserTesting" />
 		</classes>
 	</test> <!-- Test -->
-	
-	<test name="Test en Edge">
-		<parameter name="navegador" value="Edge" />
-		<classes>
-			<class name="com.testng.selenium.CrossBrowserTesting" />
-		</classes>
-	</test> <!-- Test -->
 </suite> <!-- Suite -->
