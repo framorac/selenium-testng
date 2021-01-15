@@ -31,9 +31,6 @@ public class CrossBrowserTesting {
 		} else if (navegador.equalsIgnoreCase("Firefox")){
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver");
 			driver = new FirefoxDriver();
-		} else if (navegador.equalsIgnoreCase("Edge")) {
-			System.setProperty("webdriver.edge.driver", "./src/test/resources/drivers/MicrosoftWebDriver");
-			driver = new EdgeDriver();
 		}
 		
 		driver.manage().window().maximize();
@@ -57,7 +54,7 @@ public class CrossBrowserTesting {
 	
 	@AfterClass
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }
