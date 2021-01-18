@@ -13,7 +13,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
+/**
+ * <h1>Clase BusquedaGoogle</h1>
+ * Clase ejemplo de uso basico de Selenium y TestNG
+ * @author Francisco Mora
+ */
 public class BusquedaGoogle {
 	private WebDriver driver;
 	
