@@ -15,7 +15,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
+/**
+ * <h1>Clase CrossBrowserTesting</h1>
+ * Clase ejemplo de uso de archivo testng.xml
+ * para pruebas crossbrowsertesting-multinavegador.
+ * @author Francisco Mora
+ */
 public class CrossBrowserTesting {
 	private WebDriver driver;
 	By cajaBusqueda = By.name("q");
