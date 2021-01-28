@@ -14,12 +14,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-/**
- * <h1>Clase CrossBrowserTesting</h1>
- * Clase ejemplo de uso de archivo testng.xml
- * para pruebas crossbrowsertesting-multinavegador.
- * @author Francisco Mora
- */
+
 public class CrossBrowserTesting {
 	private WebDriver driver;
 	By cajaBusqueda = By.name("q");
@@ -30,10 +25,10 @@ public class CrossBrowserTesting {
 	@Parameters({"url", "navegador"}) // Estos parametros vienen del archivo testng.xml
 	public void setup(String url, String navegador) {
 		if (navegador.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (navegador.equalsIgnoreCase("Firefox")){
-			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		

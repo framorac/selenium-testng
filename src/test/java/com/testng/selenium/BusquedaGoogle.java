@@ -13,17 +13,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-/**
- * <h1>Clase BusquedaGoogle</h1>
- * Clase ejemplo de uso basico de Selenium y TestNG
- * @author Francisco Mora
- */
 public class BusquedaGoogle {
 	private WebDriver driver;
 	
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
