@@ -24,7 +24,7 @@ public class CrossBrowserTesting {
 	private WebDriver driver;
 	By cajaBusqueda = By.name("q");
 	By seleniumLinkLocator = By.cssSelector("a[href='https://www.selenium.dev/']");
-	
+		
 	
 	@BeforeClass
 	@Parameters({"url", "navegador"}) // Estos parametros vienen del archivo testng.xml
