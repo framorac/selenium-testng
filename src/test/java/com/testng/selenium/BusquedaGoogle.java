@@ -24,7 +24,7 @@ public class BusquedaGoogle {
 		driver.get("https://www.google.com");
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void buscarEnGoogle() {
 		WebElement cajaBusqueda = driver.findElement(By.name("q"));
 		cajaBusqueda.clear();
