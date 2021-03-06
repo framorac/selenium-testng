@@ -13,7 +13,7 @@ public class SeleniumSelectores {
 	
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver_linux_29");
 		driver = new FirefoxDriver();
 	}
 	

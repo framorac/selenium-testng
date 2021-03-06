@@ -25,10 +25,10 @@ public class CrossBrowserTesting {
 	@Parameters({"url", "navegador"}) // Estos parametros vienen del archivo testng.xml
 	public void setup(String url, String navegador) {
 		if (navegador.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver_linux_89");
 			driver = new ChromeDriver();
 		} else if (navegador.equalsIgnoreCase("Firefox")){
-			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver_linux_29");
 			driver = new FirefoxDriver();
 		}
 		
