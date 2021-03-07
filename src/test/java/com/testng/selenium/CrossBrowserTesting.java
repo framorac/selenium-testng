@@ -22,7 +22,7 @@ public class CrossBrowserTesting {
 		
 	
 	@BeforeClass
-	@Parameters({"url", "navegador"})
+	@Parameters({"url", "navegador"}) //Parámetros desde testng.xml
 	public void setup(String url, String navegador) {
 		if (navegador.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver_linux_88");
