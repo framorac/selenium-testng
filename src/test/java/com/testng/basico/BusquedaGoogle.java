@@ -1,4 +1,4 @@
-package com.testng.selenium;
+package com.testng.basico;
 
 import static org.junit.Assert.assertEquals;
 
